@@ -17,7 +17,7 @@ export function TodoAdd({ onNewTodo }) {
       onNewTodo && onNewTodo({
          id: new Date().getTime(),
          description,
-         donde: false,
+         done: false,
       })
    }, [description])
 
