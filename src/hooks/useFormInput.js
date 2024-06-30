@@ -17,13 +17,16 @@ export const useFormInput = (initialFrom = {}) => {
       
       e.preventDefault()
       let data = new FormData( e.target )
+      if(data.length <= 2)return;
+
       let entradasFrom = Object.fromEntries( data.entries() )
       
       setFromState({
-         ...inputState,
+         ...formState,
          ...entradasFrom,
       })
    }
+
    const onResetFrom = () => {
       setFromState(initialFrom)
    }
@@ -34,8 +37,8 @@ export const useFormInput = (initialFrom = {}) => {
    // const {username, email} = inputState;
 
    return {
-      inputState,
-      formState,
+      ...inputState,
+      ...formState,
       onInputChange,
       onFormChange,
       onResetFrom,

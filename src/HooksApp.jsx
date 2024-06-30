@@ -6,9 +6,14 @@
 // import MultipleCustomHook from "./03-examples/MultipleCustomHook";
 // import { FocusScreen } from "./04-useRef/FocusScreen";
 // import Layout from "./05-useLayoutEffect/Layout";
-import { MemoHooks } from "./06-memos/MemoHook";
+// import CallbackHook from "./06-memos/CallbackHook";
+// import { Padre } from "./07-tarea-memo/Padre";
+// import { MemoHooks } from "./06-memos/MemoHook";
 // import { Memorize } from "./06-memos/Memorize";
 // import { LayoutLoading } from "./05-useLayoutEffect/LayoutLoading";
+
+// import './08-useReducer/intro-reduces'
+import { TodoApp } from "./08-useReducer/TodoApp";
 
 export default function HooksApp() {
   return (
@@ -20,7 +25,9 @@ export default function HooksApp() {
     {/* <LayoutLoading/> */}
     {/* <Layout/> */}
     {/* <Memorize/> */}
-    <MemoHooks/>
+    {/* <MemoHooks/> */}
+    {/* <Padre/> */}
+    <TodoApp/>
     </>
   )
 }
