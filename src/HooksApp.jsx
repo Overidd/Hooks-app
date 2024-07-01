@@ -13,21 +13,14 @@
 // import { LayoutLoading } from "./05-useLayoutEffect/LayoutLoading";
 
 // import './08-useReducer/intro-reduces'
-import { TodoApp } from "./08-useReducer/TodoApp";
+// import { TodoApp } from "./08-useReducer/TodoApp";
+import { MainApp } from "./09-useContext/MainApp";
+import { BrowserRouter } from 'react-router-dom'
 
 export default function HooksApp() {
   return (
-    <>
-    {/* <CounterCustomHook/> */}
-    {/* <SimgleForm/> */}
-    {/* <MultipleCustomHook/> */}
-    {/* <FocusScreen/> */}
-    {/* <LayoutLoading/> */}
-    {/* <Layout/> */}
-    {/* <Memorize/> */}
-    {/* <MemoHooks/> */}
-    {/* <Padre/> */}
-    <TodoApp/>
-    </>
+    <BrowserRouter>
+        <MainApp />
+    </BrowserRouter>
   )
 }

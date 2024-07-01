@@ -13,7 +13,6 @@ export function TodoApp() {
          <h3>TodoApp: {todosCount}, <small>pendientes: {pendingTodosCount}</small></h3>
          <hr />
 
-
          <div className="row">
             <div className="col-7">
                <TodoList todos={todos} onDeleteTodo={handleDeleteTodo} onToggleTodo={handleToggleTodo} />
